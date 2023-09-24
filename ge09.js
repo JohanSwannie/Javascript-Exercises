@@ -14,7 +14,7 @@ function div2(a, b) {
   return a / b;
 }
 
-let numbers = [5000, 500, 100, 10, 0];
+let numbers = [5000, 1000, 500, 100, 10, 0];
 
 let counter = 1;
 

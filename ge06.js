@@ -39,7 +39,7 @@ while (true) {
   }
 
   if (action === "all") {
-    console.log("ALL RECORDS");
+    console.log("ALL RECORDS On DISPLAY");
     console.log("-----------");
     for (let person of contacts) {
       console.log(
