@@ -1,9 +1,9 @@
 while (true) {
-  let firstNumber = prompt("Enter first number OR enter 'q' to quit");
+  let firstNumber = Number(prompt("Enter first number OR enter 'q' to quit"));
   if (firstNumber.toLowerCase() === "q") {
     break;
   }
-  let secondNumber = prompt("Enter second number OR enter 'q' to quit");
+  let secondNumber = Number(prompt("Enter second number OR enter 'q' to quit"));
   if (secondNumber.toLowerCase() === "q") {
     break;
   }
