@@ -1,14 +1,14 @@
 while (true) {
-  let firstNumber = prompt("Enter first number OR enter 'Quit' to quit");
-  if ((firstNumber === "Quit") | (firstNumber === "quit")) {
+  let firstNumber = prompt("Enter first number OR enter 'q' to quit");
+  if (firstNumber.toLowerCase() === "q") {
     break;
   }
-  let secondNumber = prompt("Enter second number OR enter 'Quit' to quit");
-  if ((secondNumber === "Quit") | (firstNumber === "quit")) {
+  let secondNumber = prompt("Enter second number OR enter 'q' to quit");
+  if (secondNumber.toLowerCase() === "q") {
     break;
   }
-  let operand = prompt("Enter operand (+, -, * or /) OR enter 'Quit' to quit");
-  if ((operand === "Quit") | (firstNumber === "quit")) {
+  let operand = prompt("Enter operand (+, -, * or /) OR enter 'q' to quit");
+  if (operand.toLocaleLowerCase() === "q") {
     break;
   }
   let result;
