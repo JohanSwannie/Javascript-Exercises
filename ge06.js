@@ -78,5 +78,6 @@ while (true) {
     contacts.push(newContact);
     console.log("NEW RECORD ADDED");
     console.log("----------------");
+    console.log(contacts);
   }
 }
