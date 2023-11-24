@@ -46,5 +46,9 @@ while (true) {
   } else {
     result = "Error: at least one of the entered values is not a number";
   }
-  alert(`The result of your calculation is ${result}`);
+  if (typeof result == "string") {
+    alert(result);
+  } else {
+    alert(`The result of your calculation is ${result}`);
+  }
 }
