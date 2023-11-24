@@ -21,7 +21,7 @@ while (true) {
     `Choose action ("first" to display the first contact, "last" to display the last contact, "all" to display all contacts, "new" to add a new contact or "q" to exit the program)`
   );
 
-  if ((action === "quit") | (action === "Quit")) {
+  if (action.toLocaleLowerCase() === "q") {
     break;
   }
 
@@ -78,6 +78,10 @@ while (true) {
     contacts.push(newContact);
     console.log("NEW RECORD ADDED");
     console.log("----------------");
-    console.log(contacts);
+    for (let value of contacts) {
+      console.log(
+        `Name : ${value.name} Phone : ${value.phone} Email : ${value.email}`
+      );
+    }
   }
 }
