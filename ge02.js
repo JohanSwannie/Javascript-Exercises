@@ -45,19 +45,19 @@ if (first) {
   popper.innerHTML = `${contacts[0].name} phone number is ${contacts[0].phone} and email is ${contacts[0].email}`;
   popper.setAttribute("id", "popper1");
   container.appendChild(popper);
-  hrTag = document.createElement("hr");
+  const hrTag = document.createElement("hr");
   container.appendChild(hrTag);
 }
 
 let last = confirm("Do you want to see the last contact?");
 
 if (last) {
-  lI = contacts.length - 1;
+  const lI = contacts.length - 1;
   const popper = document.createElement("p");
   popper.innerHTML = `${contacts[lI].name} phone number is ${contacts[lI].phone} and email is ${contacts[lI].email}`;
   popper.setAttribute("id", "popper2");
   container.appendChild(popper);
-  hrTag = document.createElement("hr");
+  const hrTag = document.createElement("hr");
   container.appendChild(hrTag);
 }
 
