@@ -8,6 +8,7 @@ let cities = [
   { name: "Delhi", population: 25.87e6 },
   { name: "Tokyo", population: 37.26e6 },
 ];
+
 for (let city of cities) {
   if (city.population < 20e6) {
     console.log(`${city.name} (${city.population})`);
@@ -63,12 +64,12 @@ for (number of numbers) {
 let movies = [];
 
 while (true) {
-  let title = prompt("Enter movie title");
-  let rating = prompt("Enter movie rating (imdb)");
+  let title = prompt("Enter movie title or 'q' to quit");
 
-  if (title == null || rating == null) {
+  if (title === "q") {
     break;
   } else {
+    let rating = prompt("Enter movie rating (imdb)");
     movies.push({
       title: title,
       rating: Number(rating),
@@ -77,6 +78,7 @@ while (true) {
 }
 
 console.log("All with ratings under 7:");
+
 for (let movie of movies) {
   if (movie.rating < 7) {
     console.log(`${movie.title} (${movie.rating})`);
@@ -84,6 +86,7 @@ for (let movie of movies) {
 }
 
 console.log("All with ratings over 7:");
+
 for (let movie of movies) {
   if (movie.rating >= 7) {
     console.log(`${movie.title} (${movie.rating})`);
