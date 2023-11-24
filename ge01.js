@@ -25,6 +25,10 @@ while (indicator !== "q") {
   } else {
     result = "Error: at least one of the entered values is not a number";
   }
-  alert(`Answer is ${result}`);
+  if (typeof result == "string") {
+    alert(`${result}`);
+  } else {
+    alert(`Answer is ${result}`);
+  }
   indicator = prompt(`Click OK to play again or enter 'q' to quit`);
 }
