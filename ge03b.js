@@ -1,19 +1,17 @@
-let numArray = [];
-
 let amntNumb;
 
 while (true) {
-  amntNumb = Number(
-    prompt("Enter amount of numbers - only 5, 6 or 7 allowed!")
-  );
+  amntNumb = Number(prompt("Enter 5, 6 or 7 to generate lotto numbers"));
   if (isNaN(amntNumb)) {
     alert("Please Enter a valid number");
-  } else if ((amntNumb < 5) | (amntNumb > 7)) {
+  } else if (amntNumb < 5 || amntNumb > 7) {
     alert("Numbers can only be 5, 6 or 7 - Please try again");
   } else {
     break;
   }
 }
+
+let numArray = [];
 let completed = false;
 let counter = 0;
 
