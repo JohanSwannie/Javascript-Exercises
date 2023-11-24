@@ -18,7 +18,7 @@ let contacts = [
 
 while (true) {
   let action = prompt(
-    `Choose action ("first" to display the first contact, "last" to display the last contact, "all" to display all contacts, "new" to add a new contact or "quit" to exit the program)`
+    `Choose action ("first" to display the first contact, "last" to display the last contact, "all" to display all contacts, "new" to add a new contact or "q" to exit the program)`
   );
 
   if ((action === "quit") | (action === "Quit")) {
