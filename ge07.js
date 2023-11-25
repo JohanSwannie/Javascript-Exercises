@@ -131,7 +131,7 @@ console.log("test2 2");
 let inner3 = function () {
   console.log("inner3 1");
 };
-let outer3 = function (callback3) {
+let outer3 = (callback3) => {
   console.log("outer3 1");
   let counter = 1;
   let timerId = setInterval(() => {
