@@ -1,5 +1,5 @@
 try {
-  banieSchoeman;
+  bosbeerBonanza;
 } catch (err) {
   alert(err.name);
   alert(err.message);
