@@ -24,9 +24,11 @@ for (let a3 = 1; a3 < 10; a3 += 2) {
 }
 
 let counter = 0;
+
 while (counter++ < 10) console.log("Our Counter is " + counter++);
 
 let route = { distance: 131, elevation: 1.4 };
+
 for (let k in route) console.log(`${k} : ${route[k]}`);
 
 let a4 = (n) => {
@@ -45,11 +47,13 @@ let interval = setInterval(() => {
 function execute(todo, a, b) {
   return todo(a, b);
 }
+
 let power = (x2, y2) => x2 ** y2;
 
 console.log(execute(power, 3, 2));
 
 const a5 = "hello";
+
 try {
   console.log(a5.toUpperCase());
 } catch (error) {
