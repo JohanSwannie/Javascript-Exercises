@@ -29,18 +29,16 @@ const descr = [
   "Hobby of Person is ",
 ];
 
-let cntr = 0;
+let c = 0;
 
 for (let instance of obberman) {
   const pipper = document.createElement("p");
   for (let entry in instance) {
-    const spanny = document.createElement("span");
-    spanny.innerHTML = `${descr[cntr]} ${instance[entry]} ${
-      cntr < 2 ? " ----- " : ""
-    }`;
-    pipper.appendChild(spanny);
-    cntr++;
+    const sp = document.createElement("span");
+    sp.innerHTML = `${descr[c]} ${instance[entry]} ${c < 2 ? " ----- " : ""}`;
+    pipper.appendChild(sp);
+    c++;
   }
-  cntr = 0;
+  c = 0;
   container.appendChild(pipper);
 }
