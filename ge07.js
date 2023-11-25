@@ -10,6 +10,7 @@ function getMeanTemp(temperatures) {
   }
   return sum / temperatures.length;
 }
+
 console.log(getMeanTemp(10, 20));
 console.log(getMeanTemp([10, 40]));
 
@@ -23,6 +24,7 @@ function factorial(n) {
   }
   return result;
 }
+
 console.log(factorial(7));
 
 //Function - Example 3 - Factorials with ternary statement - Recursion way
@@ -30,6 +32,7 @@ console.log(factorial(7));
 function factorial2(n) {
   return n > 1 ? n * factorial2(n - 1) : 1;
 }
+
 console.log(factorial2(7));
 
 //Function - Example 3b - Factorials with ternary statement
@@ -43,8 +46,10 @@ console.log(factorial3(7));
 function doNothing() {
   return undefined;
 }
+
 let a = doNothing(); // assign result of function call
 let b = doNothing; // assign a function
+
 console.log(typeof a); // -> undefined
 console.log(typeof b); // -> function
 
@@ -53,12 +58,15 @@ console.log(typeof b); // -> function
 function add(a, b) {
   return a + b;
 }
+
 function multiply(a, b) {
   return a * b;
 }
+
 function operation(func, first, second) {
   return func(first, second);
 }
+
 console.log(operation(add, 10, 20)); // -> 30
 console.log(operation(multiply, 10, 20)); // -> 200
 
@@ -67,7 +75,9 @@ console.log(operation(multiply, 10, 20)); // -> 200
 function add(a, b) {
   return a + b;
 }
+
 let myAdd = add;
+
 console.log(myAdd(10, 20)); // -> 30
 console.log(add(10, 20)); // -> 30
 
@@ -76,6 +86,7 @@ console.log(add(10, 20)); // -> 30
 let myAdd2 = function add(a, b) {
   return a + b;
 };
+
 console.log(add(10, 20)); // -> 30
 console.log(myAdd2(10, 20)); // -> 30
 
@@ -84,10 +95,13 @@ console.log(myAdd2(10, 20)); // -> 30
 function operation(func, first, second) {
   return func(first, second);
 }
+
 let myAdd3 = function (a, b) {
   return a + b;
 };
+
 console.log(operation(myAdd3, 10, 20)); // -> 30
+
 console.log(
   operation(
     function (a, b) {
@@ -103,13 +117,17 @@ console.log(
 let inner = function () {
   console.log("inner 1");
 };
+
 let outer = function (callback) {
   console.log("outer 1");
   callback();
   console.log("outer 2");
 };
+
 console.log("test 1");
+
 outer(inner);
+
 console.log("test 2");
 
 //Functions - Example 10 - Asynchronous Callback
@@ -117,13 +135,17 @@ console.log("test 2");
 let inner2 = function () {
   console.log("inner2 1");
 };
+
 let outer2 = (callback2) => {
   console.log("outer2 1");
   setTimeout(callback2, 7000);
   console.log("outer2 2");
 };
+
 console.log("test2 1");
+
 outer2(inner2);
+
 console.log("test2 2");
 
 //Functions - Example 11 - setTimeout & setInterval Functions
@@ -131,6 +153,7 @@ console.log("test2 2");
 let inner3 = function () {
   console.log("inner3 1");
 };
+
 let outer3 = (callback3) => {
   console.log("outer3 1");
   let counter = 1;
@@ -144,8 +167,11 @@ let outer3 = (callback3) => {
     clearInterval(timerId);
   }, 10000);
 };
+
 console.log("test3 1");
+
 outer3(inner3);
+
 console.log("test3 2");
 
 //Functions - Example 12 - Arrow Functions
@@ -153,19 +179,23 @@ console.log("test3 2");
 let add2 = (a, b) => {
   return a + b;
 };
+
 console.log(add2(10, 20));
 
 //Functions - Example 13 - Arrow Functions
 
 let add3 = (a, b) => a + b;
+
 console.log(add3(10, 20));
 
 //Functions - Example 14 - Functions using forEach
 
 let names = ["Alice", "Eve", "John", "Luke", "Mark"];
+
 function showName(item) {
   console.log(item);
 }
+
 names.forEach(showName);
 
 //Functions - Exercise 1 - sorting the long way
@@ -181,6 +211,7 @@ function compareNumbers(a, b) {
   }
   return retVal;
 }
+
 console.log(`The numbers sorted are now : ${numbers.sort(compareNumbers)}`);
 
 //Functions - Exercise 2 - Sorting the short way
@@ -189,6 +220,7 @@ let numbers2 = [50, 10, 40, 30, 20];
 const compareNumbers2 = (numbers2) => {
   return numbers2.sort((a, b) => a - b);
 };
+
 console.log(compareNumbers2(numbers2)); // [10, 20, 30, 40, 50]
 
 //Functions - Exercise 3 - Sorting the shortest way
@@ -230,6 +262,7 @@ function action3(callback, a, b) {
 //Functions - Exercise 6 - setInterval, setTimeout, clearInterval
 
 let counter = 1;
+
 let intervalId = setInterval(() => {
   console.log(counter++);
 }, 2000);
