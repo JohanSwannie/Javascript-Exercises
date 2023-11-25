@@ -1,7 +1,7 @@
 //Function - Example 1
 
 function getMeanTemp(temperatures) {
-  if (!temperatures instanceof Array) {
+  if (!(temperatures instanceof Array)) {
     return "This is not an array";
   }
   let sum = 0;
