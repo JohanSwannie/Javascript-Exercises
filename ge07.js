@@ -117,7 +117,7 @@ console.log("test 2");
 let inner2 = function () {
   console.log("inner2 1");
 };
-let outer2 = function (callback2) {
+let outer2 = (callback2) => {
   console.log("outer2 1");
   setTimeout(callback2, 7000);
   console.log("outer2 2");
