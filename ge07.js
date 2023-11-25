@@ -1,8 +1,8 @@
 //Function - Example 1
 
 function getMeanTemp(temperatures) {
-  if (!(temperatures instanceof Array)) {
-    return NaN;
+  if (!temperatures instanceof Array) {
+    return "This is not an array";
   }
   let sum = 0;
   for (let i = 0; i < temperatures.length; i++) {
@@ -10,8 +10,8 @@ function getMeanTemp(temperatures) {
   }
   return sum / temperatures.length;
 }
-console.log(getMeanTemp(10));
-console.log(getMeanTemp([10, 30]));
+console.log(getMeanTemp(10, 20));
+console.log(getMeanTemp([10, 40]));
 
 //Function - Example 2 - Factorials - Iteration Way
 
