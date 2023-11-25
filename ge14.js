@@ -35,15 +35,9 @@ for (let instance of obberman) {
   const pipper = document.createElement("p");
   for (let entry in instance) {
     const spanny = document.createElement("span");
-    spanny.innerHTML = `${
-      cntr === 0
-        ? descr[cntr]
-        : cntr === 1
-        ? descr[cntr]
-        : cntr === 2
-        ? descr[cntr]
-        : null
-    } ${instance[entry]} ${cntr < 2 ? " ----- " : ""}`;
+    spanny.innerHTML = `${descr[cntr]} ${instance[entry]} ${
+      cntr < 2 ? " ----- " : ""
+    }`;
     pipper.appendChild(spanny);
     cntr++;
   }
