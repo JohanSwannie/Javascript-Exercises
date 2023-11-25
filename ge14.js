@@ -24,9 +24,9 @@ const obberman = [
 const container = document.querySelector(".container");
 
 const descr = [
-  "Name of Person is ",
-  "Career of Person is ",
-  "Hobby of Person is ",
+  "The name of the person is : ",
+  "The career of the person is : ",
+  "The hobby of the person is : ",
 ];
 
 let c = 0;
