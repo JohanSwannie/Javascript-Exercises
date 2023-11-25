@@ -21,13 +21,13 @@ body {
 }
 
 .container {
-  width: 80vw;
-  padding: 2vw;
+  width: 88vw;
+  padding: 1vw;
   border: 1px solid #fcbe24;
   margin: auto;
 }
 
 p {
   display: block;
-  margin: 2rem 11vw;
+  margin: 2vw 6vw;
 }
