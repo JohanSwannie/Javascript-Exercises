@@ -3,25 +3,25 @@ const container = document.querySelector(".container");
 let contacts = [];
 
 const setLocalStorage = () => {
-  let string1 = JSON.stringify(contacts);
-  localStorage.setItem("contacts", string1);
+  localStorage.setItem("contacts", JSON.stringify(contacts));
 };
 
 // OR
 
 // const setLocalStorage = () => {
-//   localStorage.setItem("contacts", JSON.stringify(contacts));
+//   let string1 = JSON.stringify(contacts);
+//   localStorage.setItem("contacts", string1);
 // };
 
 const getLocalStorage = () => {
-  let retString = localStorage.getItem("contacts");
-  contacts = JSON.parse(retString);
+  JSON.parse(localStorage.getItem("contacts"));
 };
 
 // OR;
 
 // const getLocalStorage = () => {
-//   JSON.parse(localStorage.getItem("contacts"));
+//   let retString = localStorage.getItem("contacts");
+//   contacts = JSON.parse(retString);
 // };
 
 let testLocalStorage = localStorage.getItem("contacts");
