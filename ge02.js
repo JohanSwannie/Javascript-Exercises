@@ -59,6 +59,8 @@ if (first) {
   container.appendChild(popper);
   const hrTag = document.createElement("hr");
   container.appendChild(hrTag);
+  const brTag = document.createElement("br");
+  container.appendChild(brTag);
 }
 
 let last = confirm("Do you want to see the last contact?");
@@ -71,6 +73,8 @@ if (last) {
   container.appendChild(popper);
   const hrTag = document.createElement("hr");
   container.appendChild(hrTag);
+  const brTag = document.createElement("br");
+  container.appendChild(brTag);
 }
 
 let newContact = confirm("Do you want to add a new contact?");
