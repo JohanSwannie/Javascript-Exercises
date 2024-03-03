@@ -14,7 +14,7 @@ const setLocalStorage = () => {
 // };
 
 const getLocalStorage = () => {
-  JSON.parse(localStorage.getItem("contacts"));
+  contacts = JSON.parse(localStorage.getItem("contacts"));
 };
 
 // OR;
@@ -46,9 +46,9 @@ if (!testLocalStorage) {
   ];
   setLocalStorage();
   getLocalStorage();
+} else {
+  getLocalStorage();
 }
-
-getLocalStorage();
 
 let first = confirm("Do you want to see the first contact?");
 
