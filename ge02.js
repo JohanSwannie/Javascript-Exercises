@@ -7,10 +7,22 @@ const setLocalStorage = () => {
   localStorage.setItem("contacts", string1);
 };
 
+// OR
+
+// const setLocalStorage = () => {
+//   localStorage.setItem("contacts", JSON.stringify(contacts));
+// };
+
 const getLocalStorage = () => {
   let retString = localStorage.getItem("contacts");
   contacts = JSON.parse(retString);
 };
+
+// OR;
+
+// const getLocalStorage = () => {
+//   JSON.parse(localStorage.getItem("contacts"));
+// };
 
 let testLocalStorage = localStorage.getItem("contacts");
 
