@@ -24,9 +24,7 @@ const getLocalStorage = () => {
 //   contacts = JSON.parse(retString);
 // };
 
-let testLocalStorage = localStorage.getItem("contacts");
-
-if (!testLocalStorage) {
+if (!localStorage.getItem("contacts")) {
   contacts = [
     {
       name: "James Mower",
