@@ -31,18 +31,3 @@ names.forEach((number) =>
 );
 
 // ------------------------------------------------------------
-
-let addition = (a, b) =>
-  !Number.isInteger(a) || !Number.isInteger(b) ? NaN : a + b;
-
-console.log(`Addition Result is : ${addition(14, 3)}`);
-
-let subtraction = (a, b) =>
-  !Number.isInteger(a) || !Number.isInteger(b) ? NaN : a - b;
-
-console.log(`Subtraction Result is : ${subtraction(93, 14)}`);
-
-let multiplication = (a, b) =>
-  !Number.isInteger(a) || !Number.isInteger(b) ? NaN : a * b;
-
-console.log(`Multiplication Result is : ${multiplication(16, 17)}`);
