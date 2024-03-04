@@ -43,12 +43,18 @@ let a4 = (n) => {
 
 console.log(a4(7));
 
-let counter2 = 2;
+let counter2 = 12;
 
-let interval = setInterval(() => {
-  console.log(counter2);
-  if (counter2-- <= 0) clearInterval(interval);
-}, 1000);
+setInterval(runInterval, 3000);
+
+function runInterval() {
+  console.log("Bamba");
+  counter2--;
+  if (counter2 === 10) {
+    clearInterval(runInterval);
+    console.log("Interval Cleared");
+  }
+}
 
 function execute(todo, a, b) {
   return todo(a, b);
