@@ -160,7 +160,7 @@ let outer3 = (callback3) => {
   let timerId = setInterval(() => {
     console.log(`outer3 2 with counter : ${counter}`);
     counter++;
-    callback3;
+    callback3();
   }, 2000);
   setTimeout(() => {
     console.log("TIMER ID INTERVAL HAS BEEN CANCELLED");
