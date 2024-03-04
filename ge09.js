@@ -1,18 +1,18 @@
-function div1(a, b) {
+const div1 = (a, b) => {
   if (b == 0) {
     throw new RangeError("Can't divide by 0");
   }
   return a / b;
-}
+};
 console.log(div1(34, 4)); // -> 2
 // console.log(div1(4, 0)); // -> Uncaught RangeError: Can’t divide by 0
 
-function div2(a, b) {
+const div2 = (a, b) => {
   if (b == 0) {
     throw new RangeError("You can't divide this number by zero");
   }
   return a / b;
-}
+};
 
 let numbers = [5000, 1000, 500, 100, 10, 0];
 
