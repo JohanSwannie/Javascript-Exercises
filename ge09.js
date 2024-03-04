@@ -4,7 +4,7 @@ function div1(a, b) {
   }
   return a / b;
 }
-console.log(div1(4, 2)); // -> 2
+console.log(div1(34, 4)); // -> 2
 // console.log(div1(4, 0)); // -> Uncaught RangeError: Can’t divide by 0
 
 function div2(a, b) {
