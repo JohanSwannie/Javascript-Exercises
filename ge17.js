@@ -16,6 +16,6 @@ let numbers3 = [17, 10, 19, 2, 28, 30, 5];
 
 const compareNumbers = (a, b) => (a > b ? 1 : -1);
 
-console.log(`The numbers1 sorted are now : ${numbers1.sort(compareNumbers)}`);
-console.log(`The numbers2 sorted are now : ${numbers2.sort(compareNumbers)}`);
-console.log(`The numbers3 sorted are now : ${numbers3.sort(compareNumbers)}`);
+console.log(`numbers1 sorted are : ${numbers1.sort(compareNumbers)}`);
+console.log(`numbers2 sorted are : ${numbers2.sort(compareNumbers)}`);
+console.log(`numbers3 sorted are : ${numbers3.sort(compareNumbers)}`);
