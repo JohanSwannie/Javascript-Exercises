@@ -5,10 +5,15 @@ let c = 0 && 20;
 console.log(`${a} ${b} ${c}`);
 
 let a2 = 20 + "10";
+console.log(typeof a2);
 let b2 = 20 + +"10";
-let c2 = 20 + -"10" + "10";
+console.log(typeof b2);
+let c2 = 20 + -"10" + +"10";
+console.log(typeof c2);
 let d2 = "10" - "10" + "100";
+console.log(typeof d2);
 let e2 = "A" - "B" + 0xa;
+console.log(typeof e2);
 
 console.log(`${a2}, ${b2}, ${c2}, ${d2}, ${e2}`);
 
