@@ -18,10 +18,11 @@ console.log(typeof e2);
 console.log(`${a2}, ${b2}, ${c2}, ${d2}, ${e2}`);
 
 let x = [10, 20, 30, 40, 50];
-let y = [50, 60];
+let y = [50, 60, 80, 90, 108, 141];
 
-x.reverse().push(y[0]);
+x.reverse().push(y[3]);
 
+console.log(x);
 console.log(x.length);
 
 for (let a3 = 1; a3 < 10; a3 += 2) {
