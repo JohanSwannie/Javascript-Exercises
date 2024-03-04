@@ -21,3 +21,11 @@ console.log(`numbers1 sorted are : ${numbers1.sort(sortThem)}`);
 console.log(`numbers2 sorted are : ${numbers2.sort(sortThem)}`);
 console.log(`numbers3 sorted are : ${numbers3.sort(sortThem)}`);
 console.log(`letters1 sorted are : ${letters1.sort(sortThem)}`);
+
+// ------------------------------------------------------
+
+let names = [27, 30, 15, 14, 20, 3];
+
+names.forEach((number) =>
+  number % 2 === 0 ? console.log(number) : console.log("OOPS!")
+);
