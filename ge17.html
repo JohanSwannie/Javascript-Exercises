@@ -4,9 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript Functions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgb(125, 125, 207);
+      }
+
+      .container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #my_box {
+        color: #fff;
+        background-color: #000;
+        border: 7px solid #000;
+        border-style: ridge;
+        font-size: 2rem;
+        padding: 1.5rem 2.5rem;
+        margin: 2rem 0;
+      }
+
+      button {
+        color: #fff;
+        background-color: blue;
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        border: 2px solid #fff;
+      }
+    </style>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div id="my_box">Lights Off</div>
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+    </div>
   </body>
   <script src="ge17.js"></script>
 </html>
