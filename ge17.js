@@ -31,3 +31,34 @@ names.forEach((number) =>
 );
 
 // ------------------------------------------------------------
+
+let lightsIntervalId;
+
+const changeColor = () => {
+  lightsIntervalId = setInterval(flashText, 2000);
+};
+
+const sayHello = () => {
+  alert("HELLO");
+};
+
+const flashText = () => {
+  const boxElement = document.getElementById("my_box");
+  boxElement.innerHTML === "Lights Off"
+    ? (boxElement.innerHTML = "Lights On")
+    : (boxElement.innerHTML = "Lights Off");
+  boxElement.innerHTML === "Lights Off"
+    ? (boxElement.style.backgroundColor = "#000")
+    : (boxElement.style.backgroundColor = "#FFF");
+  boxElement.innerHTML === "Lights Off"
+    ? (boxElement.style.color = "#FFF")
+    : (boxElement.style.color = "#000");
+};
+
+const stopTextColor = () => {
+  clearInterval(lightsIntervalId);
+  nIntervId = null;
+};
+
+document.getElementById("start").addEventListener("click", changeColor);
+document.getElementById("stop").addEventListener("click", stopTextColor);
