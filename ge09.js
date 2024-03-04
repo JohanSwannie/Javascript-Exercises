@@ -25,8 +25,7 @@ for (let i = 0; i < numbers.length; i++) {
   } catch (e) {
     result = e.message;
   } finally {
-    console.log(`Loop ${counter} Completed`);
+    console.log(`Loop ${counter++} Completed`);
   }
-  counter++;
   console.log(result);
 }
