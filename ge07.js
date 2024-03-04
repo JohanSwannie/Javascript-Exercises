@@ -25,7 +25,7 @@ function factorial(n) {
   return result;
 }
 
-console.log(factorial(7));
+console.log(factorial(9));
 
 //Function - Example 3 - Factorials with ternary statement - Recursion way
 
