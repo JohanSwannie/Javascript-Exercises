@@ -62,3 +62,5 @@ const stopTextColor = () => {
 
 document.getElementById("start").addEventListener("click", changeColor);
 document.getElementById("stop").addEventListener("click", stopTextColor);
+
+// ----------------------------------------------------------------
