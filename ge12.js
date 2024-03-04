@@ -38,7 +38,7 @@ let route = { distance: 131, elevation: 1.4 };
 for (let k in route) console.log(`${k} : ${route[k]}`);
 
 let a4 = (n) => {
-  return n > 2 ? n * a4(n - 1) : 2;
+  return n > 1 ? n * a4(n - 1) : 1;
 };
 
 console.log(a4(7));
