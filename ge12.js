@@ -29,9 +29,9 @@ for (let a3 = 1; a3 < 10; a3 += 2) {
   console.log(a3);
 }
 
-let counter = 0;
+let counter = 4;
 
-while (counter++ < 10) console.log("Our Counter is " + counter++);
+while (counter++ < 14) console.log("Our Counter is " + counter);
 
 let route = { distance: 131, elevation: 1.4 };
 
