@@ -21,14 +21,20 @@
 
       #spanner {
         color: red;
+        font-size: 1.7rem;
       }
     </style>
   </head>
   <body>
     <div class="container"></div>
     <button onclick="addNumber()">Add a number to the Array</button>
-    <button onclick="displayNumbers()">Display the list of numbers</button>
-    <p id="list">List of Numbers are : <span id="spanner"></span></p>
+    <button onclick="removeNumbers()">
+      Clear all the numbers from the Array
+    </button>
+    <p id="list">
+      List of Numbers are :
+      <span id="spanner">numbersArray have no items!</span>
+    </p>
   </body>
   <script src="ge18.js"></script>
 </html>
