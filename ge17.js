@@ -57,7 +57,6 @@ const flashText = () => {
 
 const stopTextColor = () => {
   clearInterval(lightsIntervalId);
-  nIntervId = null;
 };
 
 document.getElementById("start").addEventListener("click", changeColor);
