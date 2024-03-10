@@ -1,14 +1,29 @@
-const determineLargest = (array) => {
-  return array.map((arr) => Math.max.apply(null, arr));
+const romanObject = {
+  I: 1,
+  V: 5,
+  X: 10,
+  L: 50,
+  C: 100,
+  D: 500,
+  M: 1000,
 };
 
-const array1 = [
-  [27, 19, 39, 7, 11, 47],
-  [14, 41, 35, 28, 20, 91],
-  [31, 22, 50, 16, 12, 30],
-  [51, 60, 23, 64, 33, 47],
-];
+let endResult = 0;
 
-console.log(
-  `The largest number in each array is : ${determineLargest(array1)}`
-);
+const romanNumberToInteger = (romanNumber) => {
+  for (let i = 0; i < romanNumber.length; i++) {
+    if (romanObject[romanNumber[i]] < romanObject[romanNumber[i + 1]]) {
+      endResult -= romanObject[romanNumber[i]];
+    } else {
+      endResult += romanObject[romanNumber[i]];
+    }
+  }
+  return endResult;
+};
+
+let inputRomanNumber = "VI";
+
+let romanToInt = `The Roman Number ${inputRomanNumber} converts to ${romanNumberToInteger(
+  inputRomanNumber
+)}`;
+console.log(romanToInt);
