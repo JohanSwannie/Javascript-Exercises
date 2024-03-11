@@ -4,9 +4,8 @@ const convertStringToCamelCase = (stringToConvert) => {
     .map((character, index) => {
       if (character == "-" || character == "_") {
         character = stringToConvert[index + 1].toUpperCase();
-        stringToConvert.splice(index + 1, 1);
+        stringToConvert.splice(index, 1);
       }
-      console.log(character);
       return character;
     })
     .join("");
