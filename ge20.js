@@ -1,8 +1,18 @@
-function removeSmallest(numbers) {
-  let smallestIdx = numbers.indexOf(Math.min(...numbers));
-  return [...numbers.slice(0, smallestIdx), ...numbers.slice(smallestIdx + 1)];
-}
+const convertStringToCamelCase = (stringToConvert) => {
+  stringToConvert = stringToConvert.split("");
+  return stringToConvert
+    .map((character, index) => {
+      if (character == "-" || character == "_") {
+        character = stringToConvert[index + 1].toUpperCase();
+        stringToConvert.splice(index + 1, 1);
+      }
+      return character;
+    })
+    .join("");
+};
 
-console.log(
-  `New array is : ${removeSmallest([5, 9, -13, 9, 2, -21, 3, 8, 1, 2, 7])}`
-);
+document.getElementById(
+  "pbs31"
+).innerHTML = `Converted string is : ${convertStringToCamelCase(
+  "international_olymic-games"
+)}`;
