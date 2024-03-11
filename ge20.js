@@ -1,18 +1,9 @@
-const convertStringToCamelCase = (stringToConvert) => {
-  stringToConvert = stringToConvert.split("");
-  return stringToConvert
-    .map((character, index) => {
-      if (character == "-" || character == "_") {
-        character = stringToConvert[index + 1].toUpperCase();
-        stringToConvert.splice(index, 1);
-      }
-      return character;
-    })
-    .join("");
-};
+function convertStringToCamelCase2(stringToConvert2) {
+  return stringToConvert2.replace(/[_-]\w/gi, (character) =>
+    character[1].toUpperCase()
+  );
+}
 
 console.log(
-  `Converted string is : ${convertStringToCamelCase(
-    "international_olymic-games"
-  )}`
+  `Converted string is : ${convertStringToCamelCase2("national-sport_meeting")}`
 );
