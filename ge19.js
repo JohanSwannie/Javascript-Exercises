@@ -714,7 +714,7 @@ const isPangram = (sentencePassed) => {
   let sentenceToCheck = sentencePassed
     .split(" ")
     .join("")
-    .replace(/[\W\d]/g, "")
+    .replace(/[\W\d]/gi, "")
     .toLowerCase();
   return [...new Set(sentenceToCheck)].length === 26;
 };
