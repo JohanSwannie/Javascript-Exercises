@@ -11,8 +11,8 @@ const convertStringToCamelCase = (stringToConvert) => {
     .join("");
 };
 
-document.getElementById(
-  "pbs31"
-).innerHTML = `Converted string is : ${convertStringToCamelCase(
-  "international_olymic-games"
-)}`;
+console.log(
+  `Converted string is : ${convertStringToCamelCase(
+    "international_olymic-games"
+  )}`
+);
