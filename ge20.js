@@ -1,8 +1,12 @@
-const checkEndOfString2 = (string, target) => {
-  console.log(string.substr(-target.length));
-};
+function truncateTheString(str, num) {
+  if (str.length > num) {
+    return str.slice(11, num) + "...";
+  } else {
+    return str;
+  }
+}
 
-let stringToCheck2 = "Cottages in the valley";
-let endTarget2 = "valley";
+let stringToTruncate = "Jack runs down the hill at a fast pace";
+let truncateLength = 21;
 
-checkEndOfString2(stringToCheck2, endTarget2);
+console.log(`${truncateTheString(stringToTruncate, truncateLength)}`);
