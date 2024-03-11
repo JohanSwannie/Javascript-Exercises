@@ -1,9 +1,8 @@
-function convertStringToCamelCase2(stringToConvert2) {
-  return stringToConvert2.replace(/[_-]\w/gi, (character) =>
-    character[1].toUpperCase()
-  );
-}
+const checkEndOfString2 = (string, target) => {
+  console.log(string.substr(-target.length));
+};
 
-console.log(
-  `Converted string is : ${convertStringToCamelCase2("national-sport_meeting")}`
-);
+let stringToCheck2 = "Cottages in the valley";
+let endTarget2 = "valley";
+
+checkEndOfString2(stringToCheck2, endTarget2);
