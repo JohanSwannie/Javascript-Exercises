@@ -1,29 +1,20 @@
-const romanObject = {
-  I: 1,
-  V: 5,
-  X: 10,
-  L: 50,
-  C: 100,
-  D: 500,
-  M: 1000,
-};
-
-let endResult = 0;
-
-const romanNumberToInteger = (romanNumber) => {
-  for (let i = 0; i < romanNumber.length; i++) {
-    if (romanObject[romanNumber[i]] < romanObject[romanNumber[i + 1]]) {
-      endResult -= romanObject[romanNumber[i]];
-    } else {
-      endResult += romanObject[romanNumber[i]];
+function removeSmallest(numbers) {
+  let newArray = [];
+  if (numbers.length === 0) {
+    return newArray;
+  }
+  let smallestIndex = 0;
+  let smallestNumber = Infinity;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] < smallestNumber) {
+      smallestNumber = numbers[i];
+      smallestIndex = i;
     }
   }
-  return endResult;
-};
+  newArray = numbers
+    .slice(0, smallestIndex)
+    .concat(numbers.slice(smallestIndex + 1));
+  return newArray;
+}
 
-let inputRomanNumber = "VI";
-
-let romanToInt = `The Roman Number ${inputRomanNumber} converts to ${romanNumberToInteger(
-  inputRomanNumber
-)}`;
-console.log(romanToInt);
+console.log(`New array is : ${removeSmallest([5, 9, 9, 2, 1, 3, 8, 1, 2, 7])}`);
