@@ -6,6 +6,7 @@ const convertStringToCamelCase = (stringToConvert) => {
         character = stringToConvert[index + 1].toUpperCase();
         stringToConvert.splice(index + 1, 1);
       }
+      console.log(character);
       return character;
     })
     .join("");
