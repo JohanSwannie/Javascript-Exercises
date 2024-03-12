@@ -10,6 +10,6 @@ const determineIndexInsert = (array, number) => {
 };
 
 let passedArray = [12, 19, 10, 16, 18, 7, 20];
-let passedNumber = 14;
+let passedNumber = 16;
 
 console.log(determineIndexInsert(passedArray, passedNumber));
