@@ -1,19 +1,15 @@
-const determineIndexInsert = (array, number) => {
-  array.sort((a, b) => a - b);
-  console.log(array);
-  for (let i = 0; i < array.length; i++) {
-    if (number <= array[i]) {
-      return i;
+const checkTwoStrings = (array) => {
+  let string1 = array[0].toLowerCase();
+  let string2 = array[1].toLowerCase();
+  var cntr = 0;
+  for (let i in string2) {
+    if (string1.indexOf(string2[i]) !== -1) {
+      cntr++;
     }
   }
-  return array.length;
+  return cntr === string2.length;
 };
 
-let passedArray = [12, 19, 10, 16, 18, 7, 20];
-let passedNumber = 16;
+let twoStringArray = ["Families", "Fame"];
 
-let index = determineIndexInsert(passedArray, passedNumber);
-
-passedArray.splice(index, 0, passedNumber);
-
-console.log(passedArray);
+console.log(checkTwoStrings(twoStringArray));
