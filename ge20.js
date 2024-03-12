@@ -6,7 +6,7 @@ const determineIndexInsert = (array, number) => {
       return i;
     }
   }
-  return array2.length;
+  return array.length;
 };
 
 let passedArray = [12, 19, 10, 16, 18, 7, 20];
