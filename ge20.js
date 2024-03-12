@@ -1,6 +1,15 @@
-let arrayOne = [19, 42, 13, 22, 24];
-let arrayTwo = [26, 15, 10, 17, 28, 7];
+const determineIndexInsert = (array, number) => {
+  array.sort((a, b) => a - b);
+  console.log(array);
+  for (let i = 0; i < array.length; i++) {
+    if (number <= array[i]) {
+      return i;
+    }
+  }
+  return array.length;
+};
 
-arrayTwo.splice(3, 0, arrayOne);
+let passedArray = [12, 19, 10, 16, 18, 7, 20];
+let passedNumber = 14;
 
-console.log(arrayTwo.flat());
+console.log(determineIndexInsert(passedArray, passedNumber));
