@@ -12,4 +12,8 @@ const determineIndexInsert = (array, number) => {
 let passedArray = [12, 19, 10, 16, 18, 7, 20];
 let passedNumber = 16;
 
-console.log(determineIndexInsert(passedArray, passedNumber));
+let index = determineIndexInsert(passedArray, passedNumber);
+
+passedArray.splice(index, 0, passedNumber);
+
+console.log(passedArray);
