@@ -1,15 +1,13 @@
 const checkTwoStrings = (array) => {
-  let string1 = array[0].toLowerCase();
-  let string2 = array[1].toLowerCase();
-  var cntr = 0;
-  for (let i in string2) {
-    if (string1.indexOf(string2[i]) !== -1) {
-      cntr++;
+  for (let item of array) {
+    for (let i in item) {
+      if (item[i] === "") {
+        console.log("We have found a space");
+      }
     }
   }
-  return cntr === string2.length;
 };
 
-let twoStringArray = ["Families", "Fame"];
+let array = ["Families here are closer than Families there"];
 
-console.log(checkTwoStrings(twoStringArray));
+checkTwoStrings(array);
