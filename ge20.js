@@ -1,15 +1,6 @@
-const findElementToBeTrue = (array, func) => {
-  let number = 0;
-  let newArray = [];
-  for (let i = 0; i < array.length; i++) {
-    number = array[i];
-    if (func(number) === true) {
-      newArray.push(number);
-    }
-  }
-  return newArray;
-};
+let arrayOne = [19, 42, 13, 22, 24];
+let arrayTwo = [26, 15, 10, 17, 28, 7];
 
-let arrayToPass = [13, 3, 9, 15, 14, 10, 19, 35];
+arrayTwo.splice(3, 0, arrayOne);
 
-console.log(`${findElementToBeTrue(arrayToPass, (num) => num % 2 === 0)}`);
+console.log(arrayTwo.flat());
